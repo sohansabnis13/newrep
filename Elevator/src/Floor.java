@@ -7,7 +7,7 @@ public class Floor {
 	
 	 Scanner console=new Scanner(System.in);
 	
-	public int Max_floor_number=5;
+	public int Max_floor_number=7;
 
 
 	

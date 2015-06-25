@@ -13,7 +13,7 @@ public class Main {
 			Floor f=new Floor();
 			Floor_Button fb=new Floor_Button();
 		
-		System.out.println("Enter Your Choice");
+		System.out.println("Enter Your Choice*****");
 		System.out.println("1:Request Elevator Up");
 		System.out.println("2:Request Elevator Down");
 		
