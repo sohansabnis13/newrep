@@ -7,30 +7,62 @@ public class Main {
 		// TODO Auto-generated method stub
 
 		 Scanner console=new Scanner(System.in);
-		 int floor,choice;
+		 int floor,choice,x=0;
 			Elevator_Door ED=new Elevator_Door();
 			Elevator e=new Elevator();
 			Floor f=new Floor();
 			Floor_Button fb=new Floor_Button();
+			while(x==0){
 		
 		System.out.println("Enter Your Choice*****");
 		System.out.println("1:Request Elevator Up");
 		System.out.println("2:Request Elevator Down");
+		System.out.println("3:Exit");
+
 		
 		choice=console.nextInt();
 		
 		if(choice==1){	
-			System.out.println("Elevator up");
 
+			if(e.current_floor_number!=e.Max_floor_number){
+				
+		ED.DoorOpen();
+		System.out.println("\nYou Have Entered The Elevator");
+		
+	    e.EnterFloorNumber();
+	    ED.DoorClose();
+			}
+			else{
+				System.out.println("------You Are on Last Floor.Elevator Cannot Go Up-----");
+			}
+		
+	}
+		if(choice==2){	
+			if(e.current_floor_number!=1){
+				
+			
 		ED.DoorOpen();
 		System.out.println("\nYou Have Entered The Elevator");
 		
 	    e.EnterFloorNumber();
 	    
-	    System.out.println("You reached requested Floor");
-	    
+			}
+			else{
+				System.out.println("------You Are on ground Floor.Elevator Cannot Go Down-----");
+			}
 		
 		
 	}
+		
+		 
+        else if(choice==3){
+
+			System.exit(0);
+            x=1;
+		}
+		
+		
+}
+	
 
 }}
