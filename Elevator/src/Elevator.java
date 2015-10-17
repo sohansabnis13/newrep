@@ -5,13 +5,12 @@ public class Elevator extends Floor{
 
 	
 	public int Dest_floor_number;
-	public int current_floor_number=1;
+	public int current_floor_number;
 	 Scanner console=new Scanner(System.in);
 		
 	
        public void EnterFloorNumber(){
 		
-    	   System.out.println("Current Floor The Elevator is"+current_floor_number);
     	   
     	   System.out.println("Which floor you Want to go?");
    		Dest_floor_number=console.nextInt();

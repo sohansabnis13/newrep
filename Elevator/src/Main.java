@@ -8,15 +8,22 @@ public class Main {
 
 		 Scanner console=new Scanner(System.in);
 		 int floor,choice,x=0;
+		 
 			Elevator_Door ED=new Elevator_Door();
 			Elevator e=new Elevator();
 			Floor f=new Floor();
 			Floor_Button fb=new Floor_Button();
+			System.out.println("Elevator is On Ground Floor");
+			
 			while(x==0){
+				
+				 int userposition=(int) (Math.random()*7);
+				 System.out.println("\nUser Standing On Floor----"+userposition);
+
 		
-		System.out.println("Enter Your Choice*****");
-		System.out.println("1:Request Elevator Up");
-		System.out.println("2:Request Elevator Down");
+		System.out.println("----Enter Your Choice----");
+		System.out.println("1:Call Elevator Up");
+		System.out.println("2:Call Elevator Down");
 		System.out.println("3:Exit");
 
 		
